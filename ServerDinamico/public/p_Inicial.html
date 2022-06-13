@@ -1,0 +1,91 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheets/p_iniciar.css">
+        <!--Created by Kerlington Machado 202101188-->
+        
+    
+    </head>
+    <body class="corpo">
+        <h1>TURMAS</h1>
+                
+                <button class="listar">Curso 1</button>
+                <div class="listado">
+                    <button class="listar txt">docentes</button>
+                    <div class="listado">
+                        <a href="#">docente- a</a>
+                        <a href="#">docente- b</a>
+                        <a href="#">docente- c</a>
+                        <a href="#">docente- d</a>
+                        <a href="#">docente- e</a>
+                    </div><br>
+                    <button class="listar txt">Unidades Curriculares</button>
+                    <div class="listado">
+                    <a href="#">Unidade Curriculare 1</a>
+                    <a href="#">Unidade Curriculare 2</a>
+                    <a href="#">Unidade Curriculare 3</a>
+                    <a href="#">Unidade Curriculare 4</a>
+                    <a href="#">Unidade Curriculare 5</a>
+                    </div><br>
+                </div>
+                <button class="listar">Curso 2</button>
+                <div class="listado">
+                    <button class="listar txt">docentes</button>
+                    <div class="listado">
+                        <a href="#">docente- a</a>
+                        <a href="#">docente- b</a>
+                        <a href="#">docente- c</a>
+                        <a href="#">docente- d</a>
+                        <a href="#">docente- e</a>
+                    </div><br>
+                    <button class="listar txt">Unidades Curriculares</button>
+                    <div class="listado">
+                    <a href="#">Unidade Curriculare 1</a>
+                    <a href="#">Unidade Curriculare 2</a>
+                    <a href="#">Unidade Curriculare 3</a>
+                    <a href="#">Unidade Curriculare 4</a>
+                    <a href="#">Unidade Curriculare 5</a>
+                    </div><br>
+                </div>
+
+                <button class="listar">Curso 3</button>
+                <div class="listado">
+                    <button class="listar txt">docentes</button>
+                    <div class="listado">
+                        <a href="#">docente- a</a>
+                        <a href="#">docente- b</a>
+                        <a href="#">docente- c</a>
+                        <a href="#">docente- d</a>
+                        <a href="#">docente- e</a>
+                    </div><br>
+                    <button class="listar txt">Unidades Curriculares</button>
+                    <div class="listado">
+                    <a href="#">Unidade Curriculare 1</a>
+                    <a href="#">Unidade Curriculare 2</a>
+                    <a href="#">Unidade Curriculare 3</a>
+                    <a href="#">Unidade Curriculare 4</a>
+                    <a href="#">Unidade Curriculare 5</a>
+                    </div><br>
+                </div>
+            
+                <script>
+                
+                        var dropdown = document.getElementsByClassName("listar");
+                        var i;
+                        
+                        for (i = 0; i < dropdown.length; i++) {
+                        dropdown[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var dropdownContent = this.nextElementSibling;
+                        if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                        } else {
+                        dropdownContent.style.display = "block";
+                        }
+                        });
+                        }
+                        
+                </script>
+        </body>
+</html>

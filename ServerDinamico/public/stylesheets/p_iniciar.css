@@ -1,0 +1,53 @@
+a{
+    text-align: center;
+    border: none 1px black;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    top:-1.9px;
+}
+
+.listar{
+    text-align: center;
+    border: none 1px black;
+    background-color: inherit;
+    border-radius: 15px;
+    padding:5px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: black;
+    text-shadow: 2px 2px rgb(90, 172, 172);
+    display: block;
+    cursor: pointer;
+    outline: none;
+}
+
+h1{
+    text-align: center;
+    color: rgb(125, 211, 211);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-shadow: 3px 3px 2px  rgb(49, 100, 100);
+}
+
+.txt{
+    font-size: 20px;
+}
+.listar:hover {
+    color: rgb(125, 211, 211);
+    text-shadow: none;
+    transition: 0.5s;
+}
+
+.listado {
+    display: none;
+    margin-bottom: 20px;
+  }
+  .listado a{
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      margin-left: 100px;
+        text-shadow: 1px 1px;
+  }

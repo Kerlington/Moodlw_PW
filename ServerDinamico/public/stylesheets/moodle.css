@@ -1,0 +1,186 @@
+#all{
+    height: 100%; 
+    min-height: 1000px;
+    border: none 1px red;
+}
+
+#head {
+    background-color: azure;
+    border: none 1px cornflowerblue;
+    box-shadow: 0px -5px  rgb(43, 185, 185) inset;
+    height: 61px;
+    width: 100%;
+    padding-top: 5.5px;
+    align-items: center;
+}
+
+#corpo{
+    background-color: azure;
+    position:relative;
+    min-height: 1000px;
+    height: auto;   
+    border: none 1px green;
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    border-radius: 25px;
+}
+
+#notify{
+    position:relative;
+    float: right;
+    height: 61px;
+    width: 100px;
+    background-color:rgb(125, 211, 211);
+    border-radius: 5px;
+    top:-5px;
+    margin-right: 10px;
+}
+
+body{
+    background-color: rgb(125, 211, 211);
+}
+
+iframe{
+    border: none 1px black;
+    height: 1000px;
+    width: 100%;
+    border-radius: 25px;
+    scroll-behavior: none;
+    box-shadow: inherit;
+}
+
+a{
+    position: relative;
+    text-align: center;
+    float:left;
+    border: none;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+    color: black;
+    top:-5px;
+}
+
+.img{
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#logo{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+img:hover{
+    opacity: 50%;
+}
+
+.head{
+    border: none 1px black;
+    height: 61px;
+    width: 60px;
+    position: relative;
+    float: left;
+}
+
+.middle{
+    position:relative;
+    width:80%;
+    height: 61px;
+    border: none ;
+    float: left;
+}
+
+.profile{
+    position: relative;
+    float: right;
+    height: 61px;
+    width: 61px;
+    background-color:rgb(125, 211, 211);
+    border-radius: 50%;
+    box-shadow: -5px -10px rgb(43, 185, 185) inset;
+    top:-5px;
+}
+
+.divisor{
+    float:left;
+    margin-top: 14.5px;
+    height: 30px;
+    border: solid 2px rgb(43, 185, 185);
+    background-color:  rgb(43, 185, 185);
+    width: 0px;
+}
+.middle a:hover{
+    background-color: rgb(218, 239, 247);
+    border: solid 1px rgb(218, 239, 247);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+
+.waves {
+  position:fixed;
+  left: 0px;
+  bottom:8px;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:150px;
+  max-height:200px;
+}
+
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:50px;
+    min-height:50px;
+  }
+  .content {
+    height:50vh;
+  }
+}
